@@ -12,7 +12,11 @@ set softtabstop=4
 set autoindent      " Indent same level as the previous line
 set smartindent
 
-" appearance
+" GUI options
+set guioptions-=T       " Toolbar off
+set guioptions-=L       " No left hand scrollbars
+
+" Appearance
 set t_Co=256        " Use 256 colors
 colorscheme zenburn
 
@@ -44,4 +48,11 @@ set smartcase       " Override the 'ignorecase' option if the search pattern
                     
 
 set mouse=a         " Enable the use of the mouse.
+
+" Remaps
+let mapleader = ","
+nnoremap <C-n> :bnext<CR>
+nnoremap <C-p> :bprevious<CR>
+nnoremap <F2> :NERDTreeToggle<CR>
+nnoremap <F8> :!ctags -R .<CR>
 
