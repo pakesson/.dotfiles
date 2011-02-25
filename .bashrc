@@ -58,7 +58,9 @@ unset use_color safe_term match_lhs
 #------------------------------------------------
 alias ls='ls --color=auto'
 alias gcal='gcalcli'
+alias nano='nano -w'
 alias rvim='gvim --remote-silent'
+alias pacman='pacman-color'
 #------------------------------------------------
 # Misc
 #------------------------------------------------
@@ -67,6 +69,8 @@ complete -cf sudo   # Auto complete on sudo
 complete -cf man    # Auto complete on man
 # xmodmap ~/.xmodmap
 shopt -s histappend # Append to history
+shopt -s checkwinsize # Check window size after every command (prevent wrapping problems)
+stty -ixon          # Disable ^S/^Q flow control
 
 # Change the window title of X terminals 
 case ${TERM} in

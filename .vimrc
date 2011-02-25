@@ -25,6 +25,8 @@ set ruler			" show the cursor position all the time
 set showmode
 set laststatus=2
 set wildmenu
+set guioptions-=m   " Remove menu bar
+set guioptions-=T   " Remove toolbar
 
 set scrolloff=3     " Number of lines to keep above and below cursor when scrolling
 set showmatch       " Show matching brackets/paranthesis
