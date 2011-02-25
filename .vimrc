@@ -45,7 +45,8 @@ set ignorecase      " Ignore case in search patterns.
                     " For shorthand, use :set ic and :set noic
 set smartcase       " Override the 'ignorecase' option if the search pattern
                     " contains upper case characters.
-                    
+
+set tags=./tags;/   " Look for tags in current dir and work up to / if not found
 
 set mouse=a         " Enable the use of the mouse.
 
