@@ -68,6 +68,7 @@ set completeopt=longest,menuone
 
 " Remaps
 let mapleader = ","
+nnoremap <C-c> :BD<CR>
 nnoremap <C-n> :bnext<CR>
 nnoremap <C-p> :bprevious<CR>
 nnoremap <F2> :NERDTreeToggle<CR>
