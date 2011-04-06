@@ -3,7 +3,7 @@
 [ -z "$PS1" ] && return
 
 #------------------------------------------------
-# Set up prompt
+# Set up prompt (taken from Gentoo)
 #------------------------------------------------
 PS1='[\u@\h \W]\$ '
 
@@ -98,7 +98,7 @@ export HISTIGNORE="cd:ls:[bf]g:clear:exit"
 PATH=$PATH:~/bin
 
 # Android SDK
-PATH=$PATH:~/android/android-sdk-linux/platform-tools:~/android/android-sdk-linux/tools
+PATH=$PATH:~/android/android-sdk-linux/platform-tools:~/android/android-sdk-linux/tools:~/android/android-ndk-r5b
 
 export PATH
 #------------------------------------------------
