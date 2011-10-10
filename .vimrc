@@ -1,5 +1,7 @@
 set nocompatible	" Use full features (Vim mode instead of Vi)
 
+call pathogen#infect()
+
 " configure expanding of tabs for various file types
 au BufRead,BufNewFile Makefile* set noexpandtab
 
