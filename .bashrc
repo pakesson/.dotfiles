@@ -36,7 +36,7 @@ if ${use_color} ; then
 	if [[ ${EUID} == 0 ]] ; then
 		PS1='\[\033[01;31m\]\h\[\033[01;34m\] \W \$\[\033[00m\] '
 	else
-		PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] \w \$\[\033[00m\] '
+		PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] \W \$\[\033[00m\] '
 	fi
 
 	alias ls='ls --color=auto'
@@ -98,7 +98,7 @@ export HISTIGNORE="cd:ls:[bf]g:clear:exit"
 PATH=$PATH:~/bin
 
 # Android SDK
-PATH=$PATH:~/android/android-sdk-linux/platform-tools:~/android/android-sdk-linux/tools:~/android/android-ndk-r5b
+PATH=$PATH:~/android/android-sdk-linux/platform-tools:~/android/android-sdk-linux/tools:~/android/android-ndk
 
 export PATH
 #------------------------------------------------
