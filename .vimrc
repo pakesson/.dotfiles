@@ -42,6 +42,9 @@ set showmatch       " Show matching brackets/paranthesis
 
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
 
+" Show tabs and trailing spaces with ':set list' and hide with 'nolist'
+set listchars=tab:»·,trail:·
+
 " Search
 set incsearch	    " Do incremental searching
 set hlsearch        " Hilight search terms
