@@ -2,14 +2,17 @@ set nocompatible	" Use full features (Vim mode instead of Vi)
 
 call pathogen#infect()
 
-" configure expanding of tabs for various file types
-au BufRead,BufNewFile Makefile* set noexpandtab
+filetype plugin on
 
 " tabs and indentation
 set expandtab
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
+
+" configure tabs for various file types
+autocmd BufRead,BufNewFile Makefile* setlocal noexpandtab
+autocmd Filetype c setlocal tabstop=8 shiftwidth=4 noexpandtab
 
 set autoindent      " Indent same level as the previous line
 set smartindent
@@ -51,22 +54,6 @@ set smartcase       " Override the 'ignorecase' option if the search pattern
 set tags=./tags;/   " Look for tags in current dir and work up to / if not found
 
 set mouse=a         " Enable the use of the mouse.
-
-" Autocomplete
-filetype plugin on
-set ofu=syntaxcomplete#Complete
-
-" Supertab
-let g:SuperTabDefaultCompletionType = 'context'
-
-set completeopt=longest,menuone
-"inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-"inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
-"  \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
-"inoremap <expr> <M-,> pumvisible() ? '<C-n>' :
-"  \ '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
-"inoremap <expr> <C-p> pumvisible() ? '<C-p>' :
-"  \ '<C-p><C-r>=pumvisible() ? "\<lt>Up>" : ""<CR>'
 
 " Remaps
 let mapleader = ","
