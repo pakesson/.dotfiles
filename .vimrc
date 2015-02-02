@@ -23,7 +23,10 @@ set guioptions-=L       " No left hand scrollbars
 
 " Appearance
 set t_Co=256        " Use 256 colors
-colorscheme zenburn
+"let g:zenburn_force_dark_Background = 1
+"let g:zenburn_high_Contrast = 1
+"colorscheme zenburn
+colorscheme wombat
 
 syntax on			" syntax highlight
 set number			" line numbers
@@ -43,7 +46,7 @@ set showmatch       " Show matching brackets/paranthesis
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
 
 " Show tabs and trailing spaces with ':set list' and hide with 'nolist'
-set listchars=tab:Â»Â·,trail:Â·
+set listchars=tab:»·,trail:·
 
 " Search
 set incsearch	    " Do incremental searching

@@ -1,0 +1,29 @@
+! vim: set ft=xdefaults:
+
+! Xft settings ---------------------------------------------------------------
+Xft.dpi:        96
+Xft.antialias:  true
+Xft.rgba:       rgb
+Xft.hinting:    true
+Xft.hintstyle:  hintslight
+
+! URxvt settings
+URxvt.scrollBar:            false
+!!URxvt.mouseWheelScrollPage: true
+URxvt.saveLines:            32767
+URxvt.borderless:           true
+
+URxvt*title:            urxvt
+URxvt*termName:         rxvt-256color
+URxvt*cursorBlink:      true
+URxvt*urgentOnBell:     true
+URxvt*tintColor:	gray30
+
+! Font
+!URxvt.font:		-*-terminus-*-*-*-*-12-*-*-*-*-*-*-*
+!URxvt.boldFont:		-*-terminus-bold-*-*-*-12-*-*-*-*-*-*-*
+URxvt.font: xft:terminus:size=8
+
+!#include ".dotfiles/invisibone.xresources"
+#include ".dotfiles/wombat.xresources"
+
