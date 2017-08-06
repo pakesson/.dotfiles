@@ -50,8 +50,8 @@ font-2 = siji:pixelsize=10;1
 
 modules-left = i3
 modules-center = xwindow 
-:modules-right = filesystem volume xkeyboard memory cpu wlan eth battery date powermenu
-modules-right = date
+;modules-right = filesystem volume xkeyboard memory cpu wlan eth battery date powermenu
+modules-right = xkeyboard date
 
 tray-position = right
 tray-padding = 2

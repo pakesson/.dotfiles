@@ -175,3 +175,7 @@ exec_always --no-startup-id sh $HOME/.fehbg
 exec --no-startup-id VBoxClient-all
 exec --no-startup-id compton -CGb
 exec --no-startup-id thunar --daemon
+
+# Switch between US and SE keyboard layouts with Alt+Shift
+exec "setxkbmap -layout us,se"
+exec "setxkbmap -option 'grp:alt_shift_toggle'"
